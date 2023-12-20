@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: ./java.png
+background:
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -14,11 +14,34 @@ drawings:
 transition: slide-left
 title: Javadoc
 mdc: true
+layout: default
 ---
+<style>
+  .header{
+    padding: 0rem;
+    text-align: left;
+  }
+</style>
+<div class="header">
 
 # Javadoc
+```java
+/**
+ * The class that manages the epresentation
+ * @author Sebastino Racca
+ * @author Garabello Paolo
+*/
+public class Presentation {
 
-Cos'è e come usare Javadoc
+  /**
+  * Starts the presentation
+  */
+  public void start(){
+    System.out.println("Javadoc, cos'è e come usarlo");
+  }
+}
+```
+</div>
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -125,6 +148,20 @@ javadoc -d [destination] [source files]
 Esempio:
 ```bash
 javadoc -d docs/ ./src/*.java
+```
+
+---
+
+# Grazie per l'attenzione
+
+```java
+/**
+ * Ends the presentation
+*/
+public void close() {
+  System.out.println("Grazie per l'attenzione");
+  System.exit(0);
+}
 ```
 
 ---
