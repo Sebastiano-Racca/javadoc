@@ -28,7 +28,7 @@ layout: default
 ```java
 /**
  * The class that manages the epresentation
- * @author Sebastino Racca
+ * @author Sebastiano Racca
  * @author Garabello Paolo
 */
 public class Presentation {
