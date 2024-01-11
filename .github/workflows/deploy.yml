@@ -25,8 +25,8 @@ jobs:
       - name: Build website
         run: pnpm build
 
-      - name: Create CNAME file
-        run: echo "javadoc.racca.me" > ./dist/CNAME
+      # - name: Create CNAME file
+      #   run: echo "javadoc.racca.me" > ./dist/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
